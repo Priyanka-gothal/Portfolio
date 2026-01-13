@@ -1,0 +1,159 @@
+/* HEADER */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 16px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  z-index: 1000;
+  transition: 0.3s ease;
+}
+
+.header.scrolled {
+  background: rgba(2, 6, 23, 0.85);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* LOGO */
+.logo {
+  font-size: 24px;
+  font-weight: 800;
+  color: #38bdf8;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+/* ALWAYS SHINING EFFECT */
+.glow {
+  text-shadow:
+    0 0 5px rgba(56, 189, 248, 0.6),
+    0 0 15px rgba(56, 189, 248, 0.8),
+    0 0 30px rgba(56, 189, 248, 0.6);
+  animation: glowPulse 2.5s infinite ease-in-out;
+}
+
+/* Dot highlight */
+.logo span {
+  color: #38bdf8;
+}
+
+/* Subtle breathing animation */
+@keyframes glowPulse {
+  0% {
+    text-shadow:
+      0 0 5px rgba(56, 189, 248, 0.4),
+      0 0 15px rgba(56, 189, 248, 0.6);
+  }
+  50% {
+    text-shadow:
+      0 0 10px rgba(56, 189, 248, 1),
+      0 0 25px rgba(56, 189, 248, 1);
+  }
+  100% {
+    text-shadow:
+      0 0 5px rgba(56, 189, 248, 0.4),
+      0 0 15px rgba(56, 189, 248, 0.6);
+  }
+}
+
+
+/* NAV */
+.navlist {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+/* NAV BUTTON */
+.nav-btn {
+  background: none;
+  border: none;
+  color: #e5e7eb;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  padding: 0;
+  transition: 0.3s;
+}
+
+/* UNDERLINE */
+.nav-btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: #38bdf8;
+  transition: 0.3s;
+}
+
+.nav-btn:hover::after,
+.nav-btn.active::after {
+  width: 100%;
+}
+
+.nav-btn.active {
+  color: #38bdf8;
+}
+
+/* MENU ICON */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.menu-icon span {
+  width: 26px;
+  height: 3px;
+  background: #fff;
+  transition: 0.3s;
+}
+
+/* ICON ANIMATION */
+.menu-icon.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-icon.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-icon.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: flex;
+  }
+
+  .nav {
+    position: absolute;
+    top: 70px;
+    right: -100%;
+    width: 100%;
+    background: rgba(2, 6, 23, 0.95);
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+  }
+
+  .nav.open {
+    right: 0;
+  }
+
+  .navlist {
+    flex-direction: column;
+    padding: 30px;
+    gap: 22px;
+    text-align: center;
+  }
+}
