@@ -53,12 +53,6 @@ I focus on:
 
 ---
 
-## 📸 Preview
-
-*Add screenshots here after deployment*
-
----
-
 ## 📬 Contact
 
 * 💼 LinkedIn: [https://linkedin.com](https://linkedin.com)
