@@ -55,7 +55,7 @@ I focus on:
 
 ## 📬 Contact
 
-* 💼 LinkedIn: [https://linkedin.com](https://linkedin.com)
+* 💼 LinkedIn: [[https://linkedin.com](https://linkedin.com)](https://www.linkedin.com/in/priyanka-gothal)
 * 💻 GitHub: [https://github.com/Priyanka-gothal](https://github.com/Priyanka-gothal)
 
 ---
