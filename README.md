@@ -6,7 +6,7 @@ A modern, responsive, and interactive personal portfolio built with **React.js**
 
 ## 🔗 Live Demo
 
-🚀 *[priyanka-gothal-portfolio.netlify.app] (Netlify deployment)*
+🚀 * [View Portfolio](https://priyanka-gothal.netlify.app) (Netlify deployment)*
 
 ---
 
