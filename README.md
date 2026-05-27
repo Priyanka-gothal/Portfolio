@@ -1,21 +1,62 @@
-<<<<<<< HEAD
-# Portfolio
-Personal portfolio built with React.js, modern CSS, and animations to showcase projects, skills, and frontend expertise.
-=======
-# React + Vite
+# ✨ Priyanka Gothal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and interactive developer portfolio built using **React.js** and **Vite** to showcase my projects, frontend skills, and UI development work.
 
-Currently, two official plugins are available:
+## 🚀 Live Portfolio
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Add your deployed Netlify link here.
 
-## React Compiler
+## 🎨 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Modern responsive UI
+- Interactive animations and hover effects
+- Premium glassmorphism inspired design
+- Cursor glow and animated backgrounds
+- Project showcase with expandable "More Projects"
+- Smooth scrolling navigation
+- Contact form integration
+- Mobile responsive layout
 
-## Expanding the ESLint configuration
+## 🛠 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
->>>>>>> e0a4635 (new modern portfolio)
+### Frontend
+- React.js
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+- Vite
+
+### Styling & UI
+- Modern CSS
+- Glassmorphism UI
+- Animations & transitions
+- Responsive Design
+
+### Other Tools
+- Git & GitHub
+- Netlify
+- Formspree
+- AOS Animation Library
+
+## 📂 Featured Projects
+
+### ✨ TaskTracker
+Modern full-stack productivity platform with Kanban dashboard, authentication, notifications and clean SaaS-inspired UI.
+
+### ⚙️ Algorithm Visualizer
+Interactive visualization of sorting and searching algorithms with animated step-by-step execution.
+
+### 🚗 Self Driving Car
+IoT and computer vision based autonomous vehicle prototype using Raspberry Pi, Arduino and OpenCV.
+
+## 📬 Contact
+
+Feel free to connect or collaborate.
+
+- GitHub: https://github.com/Priyanka-gothal
+- LinkedIn: https://www.linkedin.com/in/priyanka-gothal/
+- Email: priyankagothal0510@gmail.com
+
+---
+
+Built with ❤️ by Priyanka Gothal
