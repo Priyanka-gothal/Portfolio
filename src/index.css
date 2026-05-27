@@ -78,3 +78,147 @@ h1, h2, h3, h4 {
 section {
   backdrop-filter: blur(2px);
 }
+/* ===== ROOT ===== */
+
+:root {
+  --accent: #38bdf8;
+  --bg1: #020617;
+  --bg2: #07111f;
+  --text: #e5e7eb;
+}
+
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  color: var(--text);
+  background:
+    linear-gradient(
+      135deg,
+      #020617 0%,
+      #07111f 45%,
+      #020617 100%
+    );
+
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* ===== SUBTLE GRID ===== */
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+
+  background-image:
+    linear-gradient(
+      rgba(56,189,248,.05) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(56,189,248,.05) 1px,
+      transparent 1px
+    );
+
+  background-size: 42px 42px;
+  mask-image:
+    radial-gradient(
+      circle,
+      rgba(0,0,0,.8),
+      transparent 85%
+    );
+}
+
+/* ===== CURSOR GLOW ===== */
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+
+  background:
+    radial-gradient(
+      420px circle at
+      var(--mouse-x,50%)
+      var(--mouse-y,50%),
+      rgba(56,189,248,.14),
+      transparent 42%
+    );
+}
+
+/* ===== FLOATING ORBS ===== */
+
+body .bg-orb1,
+body .bg-orb2 {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(90px);
+  z-index: -3;
+  pointer-events: none;
+}
+
+.bg-orb1 {
+  width: 320px;
+  height: 320px;
+  background: rgba(56,189,248,.08);
+  top: 8%;
+  left: -80px;
+  animation: orb1 12s ease-in-out infinite;
+}
+
+.bg-orb2 {
+  width: 420px;
+  height: 420px;
+  background: rgba(14,165,233,.06);
+  bottom: -120px;
+  right: -120px;
+  animation: orb2 15s ease-in-out infinite;
+}
+
+@keyframes orb1 {
+  0%,100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(60px);
+  }
+}
+
+@keyframes orb2 {
+  0%,100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-60px);
+  }
+}
+
+/* CONTENT */
+
+section,
+header,
+footer {
+  position: relative;
+  z-index: 2;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

@@ -1,25 +1,30 @@
 import { ReactTyped } from "react-typed";
 import "../styles/hero.css";
-import profile from "../assets/images/profile.png";
+import profile from "../assets/images/profile.jpg";
 
 export default function Hero() {
   return (
     <section className="home" id="home">
 
-      {/* LEFT CONTENT */}
+      {/* LEFT */}
       <div className="home-text" data-aos="fade-right">
-        <h1>Hello, It's Me</h1>
 
-        <h2>
-          <span>Priyanka Gothal</span>
-        </h2>
+        <h1>Hello, It's Me 👋</h1>
+
+        <h2>Priyanka Gothal</h2>
 
         <h3>
-          And I'm a{" "}
+          I'm a{" "}
           <span className="highlight">
             <ReactTyped
-              strings={["Web Developer", "React Developer", "Frontend Engineer"]}
-              typeSpeed={80}
+              strings={[
+                "Frontend Developer",
+                "React & UI Developer",
+                "Interactive Web Developer",
+                "Full Stack Builder",
+                "UI/UX Enthusiast",
+              ]}
+              typeSpeed={70}
               backSpeed={40}
               loop
             />
@@ -27,16 +32,14 @@ export default function Hero() {
         </h3>
 
         <p>
-          Passionate about building modern, responsive, and user-friendly web
-          applications.
+          Turning ideas into modern, scalable and interactive web experiences through thoughtful design and development.
         </p>
 
         <div className="social-icons">
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/priyanka-gothal/"
             target="_blank"
             rel="noreferrer"
-            aria-label="LinkedIn"
           >
             <i className="bx bxl-linkedin"></i>
           </a>
@@ -45,34 +48,41 @@ export default function Hero() {
             href="https://github.com/Priyanka-gothal"
             target="_blank"
             rel="noreferrer"
-            aria-label="GitHub"
           >
             <i className="bx bxl-github"></i>
           </a>
-
-
         </div>
 
-        <a
-          href="/Resume_Priyanka_Gothal.pdf"
-          download
-          className="btn glow-btn"
-        >
-          Download CV
-        </a>
+        <div className="hero-btns">
+          <a
+            href="/Priyanka_Gothal_Resume.pdf"
+            download
+            className="btn glow-btn"
+          >
+            Download CV
+          </a>
 
+          <a
+            href="#projects"
+            className="btn secondary-btn"
+          >
+            View Projects →
+          </a>
+        </div>
       </div>
 
-      {/* RIGHT IMAGE */}
-  <div className="home-img">
-  <div className="hover-frame">
-    <img src={profile} alt="Priyanka Gothal" />
-  </div>
-</div>
-
-
-
-
+      {/* RIGHT */}
+      <div
+        className="home-img"
+        data-aos="fade-left"
+      >
+        <div className="hover-frame">
+          <img
+            src={profile}
+            alt="Priyanka"
+          />
+        </div>
+      </div>
 
     </section>
   );

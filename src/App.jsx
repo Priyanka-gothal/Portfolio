@@ -31,6 +31,8 @@ function App() {
   }, []);
   return (
     <>
+    <div className="bg-orb1"></div>
+<div className="bg-orb2"></div>
       <Navbar />
       <Hero />
       <About />
