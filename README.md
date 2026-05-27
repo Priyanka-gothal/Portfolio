@@ -4,7 +4,7 @@ A modern and interactive developer portfolio built using **React.js** and **Vite
 
 ## 🚀 Live Portfolio
 
-Add your deployed Netlify link here.
+Like soon
 
 ## 🎨 Features
 
